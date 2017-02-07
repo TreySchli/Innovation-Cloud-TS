@@ -1,0 +1,148 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px;
+	padding: 0 10px;
+}
+
+.header {
+	background-image: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 800px;
+	text-align: center;
+}
+
+.header .container {
+	position: relative;
+	top: 200px;
+}
+
+.header h1 {
+	color: #ffffff;
+	font-size: 100px;
+	line-height: 100px;
+	margin-top: 0;
+	margin-bottom: 70px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 850px) {
+	.header h1 {
+		font-size: 120px;
+	}
+}
+
+.header p {
+	color: #ffffff;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-weight: 500;
+	margin-bottom: 70px;
+}
+
+.btn {
+	background-color: #000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 30px;
+	letter-spacing: 2px;
+}
+
+.btn:hover {
+	background: #117bff;
+	cursor: pointer;
+	transition: background .5s;
+}
+
+.nav {
+	background: #000;
+	height: 80px;
+	width: 100%;
+}
+
+.nav ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.nav ul li {
+	color: #ffffff;
+	font-size: 17px;
+	display: inline-block;
+	list-style: none;
+	height: 80px;
+	line-height: 80px;
+	padding: 0 10px;
+}	
+
+.nav ul li:hover {
+	background: #117bff;
+	cursor: pointer;
+	transition: background .5s;
+}
+
+.main .container {
+	margin: 80px auto;
+}
+
+.main img {
+	float: left;
+	height: 120px;
+	margin: 50px 80px 50px 0;
+}
+
+.jumbotron {
+	color: #ffffff;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg);
+	background-repeat: none;
+	background-position: center center;
+	background-size: cover;
+	height: 600px;
+	text-align: right;
+}
+
+.jumbotron .container {
+	top: 200px;
+	position: relative;
+}
+
+.footer {
+	background-color: #000000;
+}
+
+.footer p {
+	color: #ffffff;
+	height: 80px;
+	font-size: 14px;
+	line-height: 50px;
+	margin: 0px;
+}
+
+@media (max-width: 500px) {
+	.header h1 {
+		font-size: 50px;
+		line-height: 64px;
+	}
+
+	.main, .jumbotron {
+		padding: 0 30px;
+	}
+
+	.main img {
+		width: 100%
+	}
+}
